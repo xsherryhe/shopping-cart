@@ -1,0 +1,24 @@
+App
+  NavBar
+    -Links
+      -Cart with number of items
+  Router - Routes
+    Home (/)
+      Shop (shop)
+      Cart (cart)
+  
+  Home
+  
+  Shop
+    Items
+      Item
+      BuyForm
+        number field
+        increment / decrement buttons
+        add to cart button
+  Cart
+    CartItems
+      CartItem
+    Total
+    checkout button
+
