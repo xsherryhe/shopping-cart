@@ -3,9 +3,11 @@ export function totalItems(cart) {
 }
 
 export function itemTotalPrice({ quantity, price }) {
-  return quantity * price;
+  return (quantity * price).toFixed(2);
 }
 
 export function totalPrice(cart) {
-  return cart.reduce((total, item) => total + itemTotalPrice(item), 0);
+  return cart
+    .reduce((total, item) => total + Number(itemTotalPrice(item)), 0)
+    .toFixed(2);
 }

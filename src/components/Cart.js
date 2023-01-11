@@ -16,13 +16,15 @@ export default function Cart({ cart, changeCartQuantity, deleteFromCart }) {
           </tr>
         </thead>
         <tbody>
-          {cart.map((item) => (
-            <CartItem
-              item={item}
-              onChangeQuantity={changeCartQuantity}
-              onDelete={deleteFromCart}
-            />
-          ))}
+          {cart
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item) => (
+              <CartItem
+                item={item}
+                onChangeQuantity={changeCartQuantity}
+                onDelete={deleteFromCart}
+              />
+            ))}
         </tbody>
         <tfoot>
           <tr>
