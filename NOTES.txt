@@ -23,4 +23,4 @@ App
     Total
     checkout button
 
-TO DO: Adjust quantity on cart page, make header sticky and shop name/logo clickable
+TO DO: Make header sticky and shop name/logo clickable

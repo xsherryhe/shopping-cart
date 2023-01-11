@@ -48,6 +48,18 @@ function App() {
     });
   }
 
+  function changeCartQuantity(itemId, quantity) {
+    setCart((cart) => {
+      const cartItemIndex = cart.findIndex(({ id }) => id === itemId);
+      const item = cart[cartItemIndex];
+      return [
+        ...cart.slice(0, cartItemIndex),
+        ...cart.slice(cartItemIndex + 1),
+        { ...item, quantity },
+      ];
+    });
+  }
+
   function deleteFromCart(itemId) {
     setCart((cart) => {
       const cartItemIndex = cart.findIndex(({ id }) => id === itemId);
@@ -71,7 +83,13 @@ function App() {
             />
             <Route
               path="cart"
-              element={<Cart cart={cart} deleteFromCart={deleteFromCart} />}
+              element={
+                <Cart
+                  cart={cart}
+                  changeCartQuantity={changeCartQuantity}
+                  deleteFromCart={deleteFromCart}
+                />
+              }
             />
           </Routes>
         </main>

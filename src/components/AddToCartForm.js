@@ -32,7 +32,7 @@ export default function BuyForm({ id, onSubmit }) {
       <QuantityField
         quantity={quantity}
         changeQuantity={changeQuantity}
-        inputRef={input}
+        input={input}
       />
       {message && <div className="message">{message}</div>}
       {error && <div className="error">{error}</div>}

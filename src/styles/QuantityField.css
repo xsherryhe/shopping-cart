@@ -1,0 +1,18 @@
+.quantity.field {
+  display: flex;
+}
+
+.quantity.field .quantity,
+.quantity.field .change-buttons button {
+  width: 1.5rem;
+}
+
+.quantity.field input[type="number"]::-webkit-outer-spin-button,
+.quantity.field input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity.field input[type="number"] {
+  -moz-appearance: textfield;
+}
