@@ -3,7 +3,7 @@ import { totalPrice } from '../helpers/totals';
 
 import CartItem from './CartItem';
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, deleteFromCart }) {
   return (
     <div>
       <h1>My Cart</h1>
@@ -16,8 +16,8 @@ export default function Cart({ cart }) {
           </tr>
         </thead>
         <tbody>
-          {Object.values(cart).map((item) => (
-            <CartItem item={item} />
+          {cart.map((item) => (
+            <CartItem item={item} onDelete={deleteFromCart} />
           ))}
         </tbody>
         <tfoot>

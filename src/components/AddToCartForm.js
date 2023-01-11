@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import '../styles/AddToCartForm.css';
+import QuantityField from './QuantityField';
 
 export default function BuyForm({ id, onSubmit }) {
   const [quantity, setQuantity] = useState(1);
@@ -7,21 +8,9 @@ export default function BuyForm({ id, onSubmit }) {
   const [error, setError] = useState('');
   const input = useRef();
 
-  function increment(e) {
-    e.preventDefault();
+  function changeQuantity(quantity) {
     setMessage('');
-    setQuantity((quantity) => quantity + 1);
-  }
-
-  function decrement(e) {
-    e.preventDefault();
-    setMessage('');
-    setQuantity((quantity) => Math.max(1, quantity - 1));
-  }
-
-  function handleChange(e) {
-    setMessage('');
-    setQuantity(e.target.value);
+    setQuantity(quantity);
   }
 
   function validate() {
@@ -40,22 +29,11 @@ export default function BuyForm({ id, onSubmit }) {
 
   return (
     <form className="add-to-cart" noValidate onSubmit={handleSubmit}>
-      <div className="field">
-        <input
-          type="number"
-          name="quantity"
-          id="quantity"
-          value={quantity}
-          onChange={handleChange}
-          min="1"
-          required
-          ref={input}
-        />
-        <div className="change-buttons">
-          <button onClick={decrement}>-</button>
-          <button onClick={increment}>+</button>
-        </div>
-      </div>
+      <QuantityField
+        quantity={quantity}
+        changeQuantity={changeQuantity}
+        inputRef={input}
+      />
       {message && <div className="message">{message}</div>}
       {error && <div className="error">{error}</div>}
       <button type="submit">Add to Cart</button>

@@ -10,7 +10,7 @@ import Shop from './components/Shop';
 import Cart from './components/Cart';
 
 function App() {
-  const [cart, setCart] = useState({});
+  const [cart, setCart] = useState([]);
   const items = useRef(
     [
       { name: 'Monopoly', price: 15.99 },
@@ -32,11 +32,30 @@ function App() {
   );
 
   function addToCart(itemId, quantity) {
-    const item = cart[itemId] || items.current.find(({ id }) => id === itemId);
-    setCart((cart) => ({
-      ...cart,
-      [itemId]: { ...item, quantity: (item.quantity || 0) + quantity },
-    }));
+    setCart((cart) => {
+      const cartItemIndex = cart.findIndex(({ id }) => id === itemId);
+      const item =
+        cart[cartItemIndex] || items.current.find(({ id }) => id === itemId);
+      const newCart =
+        cartItemIndex < 0
+          ? [...cart]
+          : [...cart.slice(0, cartItemIndex), ...cart.slice(cartItemIndex + 1)];
+
+      return [
+        ...newCart,
+        { ...item, quantity: (item.quantity || 0) + quantity },
+      ];
+    });
+  }
+
+  function deleteFromCart(itemId) {
+    setCart((cart) => {
+      const cartItemIndex = cart.findIndex(({ id }) => id === itemId);
+      return [
+        ...cart.slice(0, cartItemIndex),
+        ...cart.slice(cartItemIndex + 1),
+      ];
+    });
   }
 
   return (
@@ -50,7 +69,10 @@ function App() {
               path="shop"
               element={<Shop items={items.current} addToCart={addToCart} />}
             />
-            <Route path="cart" element={<Cart cart={cart} />} />
+            <Route
+              path="cart"
+              element={<Cart cart={cart} deleteFromCart={deleteFromCart} />}
+            />
           </Routes>
         </main>
       </BrowserRouter>
