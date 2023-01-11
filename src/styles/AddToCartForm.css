@@ -1,0 +1,27 @@
+form.add-to-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form.add-to-cart .field {
+  display: flex;
+}
+
+form.add-to-cart .message {
+  font-size: 0.9rem;
+}
+
+form.add-to-cart input[type="number"], form.add-to-cart .change-buttons button {
+  width: 1.5rem;
+}
+
+form.add-to-cart input[type="number"]::-webkit-outer-spin-button,
+form.add-to-cart input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form.add-to-cart input[type="number"] {
+  -moz-appearance: textfield;
+}
