@@ -1,7 +1,7 @@
 import '../styles/Header.css';
 import { Link } from 'react-router-dom';
 
-export default function Header({ cartTotal }) {
+export default function Header({ cartTotal = 0 }) {
   return (
     <header>
       <h1>

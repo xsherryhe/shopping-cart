@@ -2,17 +2,12 @@ import { render, screen } from '@testing-library/react';
 import './setupTests';
 import App from '../App';
 
-jest.mock('../components/Header', () => {
-  return () => <header>Header</header>;
-});
-
-jest.mock('react-router-dom', () => {
-  return {
-    Routes: () => 'Routes',
-    Route: () => 'Route',
-    useLocation: () => ({ pathname: '' }),
-  };
-});
+jest.mock('../components/Header', () => () => <header>Header</header>);
+jest.mock('react-router-dom', () => ({
+  Routes: () => 'Routes',
+  Route: () => 'Route',
+  useLocation: () => ({ pathname: '' }),
+}));
 
 it('renders the header', () => {
   render(<App />);
