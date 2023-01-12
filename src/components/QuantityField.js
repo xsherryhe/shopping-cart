@@ -3,7 +3,7 @@ import '../styles/QuantityField.css';
 export default function QuantityField({ quantity, changeQuantity, input }) {
   function increment(e) {
     e.preventDefault();
-    changeQuantity((quantity) => quantity + 1);
+    changeQuantity((quantity) => Number(quantity) + 1);
   }
 
   function decrement(e) {
@@ -12,7 +12,7 @@ export default function QuantityField({ quantity, changeQuantity, input }) {
   }
 
   function handleChange(e) {
-    changeQuantity(Number(e.target.value));
+    changeQuantity(e.target.value);
   }
 
   const quantityDisplay = input ? (

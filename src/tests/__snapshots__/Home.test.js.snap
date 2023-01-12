@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the home content 1`] = `
+exports[`Home structure renders the home content 1`] = `
 <div>
   <div
     class="home"

@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import '../styles/AddToCartForm.css';
 import QuantityField from './QuantityField';
 
-export default function BuyForm({ id, onSubmit }) {
+export default function AddToCartForm({ id, onSubmit }) {
   const [quantity, setQuantity] = useState(1);
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
@@ -23,7 +23,7 @@ export default function BuyForm({ id, onSubmit }) {
     e.preventDefault();
     if (!validate()) return;
 
-    onSubmit(id, quantity);
+    onSubmit(id, Number(quantity));
     setMessage('Added to cart!');
   }
 
@@ -35,7 +35,11 @@ export default function BuyForm({ id, onSubmit }) {
         input={input}
       />
       {message && <div className="message">{message}</div>}
-      {error && <div className="error">{error}</div>}
+      {error && (
+        <div className="error" data-testid="error">
+          {error}
+        </div>
+      )}
       <button type="submit">Add to Cart</button>
     </form>
   );

@@ -4,7 +4,7 @@ import AddToCartForm from './AddToCartForm';
 import ShopItem from './ShopItem';
 
 export default function Shop({ items, addToCart }) {
-  return ( 
+  return (
     <div className="shop">
       <h1>The BoardWalk Online Shop</h1>
       <div className="items">
