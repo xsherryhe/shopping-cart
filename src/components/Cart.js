@@ -29,8 +29,8 @@ export default function Cart({ cart, changeCartQuantity, deleteFromCart }) {
         <tfoot>
           <tr>
             <th>Total</th>
-            <tr></tr>
-            <tr>${totalPrice(cart)}</tr>
+            <td></td>
+            <td>${totalPrice(cart)}</td>
           </tr>
         </tfoot>
       </table>

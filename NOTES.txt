@@ -23,4 +23,4 @@ App
     Total
     checkout button
 
-TO DO: Make header sticky and shop name/logo clickable
+TO DO: Testing, styling

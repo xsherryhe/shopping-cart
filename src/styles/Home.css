@@ -1,0 +1,27 @@
+.home {
+  padding: 8vh 0;
+}
+
+.home h1 {
+  font-size: 4rem;
+}
+
+.home h1, .home h2 {
+  margin: 0;
+}
+
+.home .info {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.home .info h3 {
+  margin: 0.5rem;
+}
+
+.home a {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}

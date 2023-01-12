@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import './styles/App.css';
 import { totalItems } from './helpers/totals';
 import uniqid from 'uniqid';
@@ -86,30 +86,29 @@ function App() {
     });
   }
 
+  const path = useLocation().pathname;
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Header cartTotal={totalItems(cart)} />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="shop"
-              element={<Shop items={items.current} addToCart={addToCart} />}
-            />
-            <Route
-              path="cart"
-              element={
-                <Cart
-                  cart={cart}
-                  changeCartQuantity={changeCartQuantity}
-                  deleteFromCart={deleteFromCart}
-                />
-              }
-            />
-          </Routes>
-        </main>
-      </BrowserRouter>
+    <div className={`App ${path === '/' ? 'homepage' : ''}`}>
+      <Header cartTotal={totalItems(cart)} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="shop"
+            element={<Shop items={items.current} addToCart={addToCart} />}
+          />
+          <Route
+            path="cart"
+            element={
+              <Cart
+                cart={cart}
+                changeCartQuantity={changeCartQuantity}
+                deleteFromCart={deleteFromCart}
+              />
+            }
+          />
+        </Routes>
+      </main>
     </div>
   );
 }
