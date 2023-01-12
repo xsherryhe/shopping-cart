@@ -1,0 +1,5 @@
+.shop .item img {
+  width: 22vw;
+  height: 15rem;
+  object-fit: cover;
+}
