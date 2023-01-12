@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the home content 1`] = `
+<div>
+  <div
+    class="home"
+  >
+    <h1>
+      The BoardWalk
+    </h1>
+    <h2>
+      Board games everywhere you walk!
+    </h2>
+    <div
+      class="info"
+    >
+      <div
+        class="address"
+      >
+        <h3>
+          Our Address
+        </h3>
+        <p>
+          123 Happy Games Lane
+        </p>
+        <p>
+          World, Universe 12345
+        </p>
+      </div>
+      <div
+        class="hours"
+      >
+        <h3>
+          Our Hours
+        </h3>
+        <p>
+          Tuesday - Friday 12pm - 9pm
+        </p>
+        <p>
+          Saturday - Sunday 10am - 10pm
+        </p>
+      </div>
+    </div>
+    <a
+      href="shop"
+    >
+      Walk Through Our Online Shop
+    </a>
+  </div>
+</div>
+`;
