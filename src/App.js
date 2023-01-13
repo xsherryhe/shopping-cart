@@ -25,27 +25,27 @@ import Home from './components/Home';
 import Shop from './components/Shop';
 import Cart from './components/Cart';
 
-function App() {
+const boardWalkItems = [
+  { name: 'Monopoly', price: 15.99, img: monopoly },
+  { name: 'Game of Life', price: 18.99, img: gameOfLife },
+  { name: 'Clue', price: 11.99, img: clue },
+  { name: 'Scrabble', price: 19.99, img: scrabble },
+  { name: 'Playing Cards (Standard Deck)', price: 4.99, img: playingCards },
+  { name: 'Ticket to Ride', price: 24.99, img: ticketToRide },
+  { name: 'Settlers of Catan', price: 29.99, img: settlersOfCatan },
+  { name: 'Apples to Apples', price: 12.99, img: applesToApples },
+  { name: 'Pandemic', price: 45.99, img: pandemic },
+  { name: 'The Crew: Quest for Planet Nine', price: 14.99, img: theCrew },
+  { name: 'Fog of Love', price: 49.99, img: fogOfLove },
+  { name: 'Wingspan', price: 39.99, img: wingspan },
+  { name: 'Dominion', price: 42.99, img: dominion },
+  { name: 'Fluxx', price: 18.99, img: fluxx },
+  { name: 'Between Two Cities', price: 30.99, img: betweenTwoCities },
+];
+
+function App({ appItems = boardWalkItems }) {
   const [cart, setCart] = useState([]);
-  const items = useRef(
-    [
-      { name: 'Monopoly', price: 15.99, img: monopoly },
-      { name: 'Game of Life', price: 18.99, img: gameOfLife },
-      { name: 'Clue', price: 11.99, img: clue },
-      { name: 'Scrabble', price: 19.99, img: scrabble },
-      { name: 'Playing Cards (Standard Deck)', price: 4.99, img: playingCards },
-      { name: 'Ticket to Ride', price: 24.99, img: ticketToRide },
-      { name: 'Settlers of Catan', price: 29.99, img: settlersOfCatan },
-      { name: 'Apples to Apples', price: 12.99, img: applesToApples },
-      { name: 'Pandemic', price: 45.99, img: pandemic },
-      { name: 'The Crew: Quest for Planet Nine', price: 14.99, img: theCrew },
-      { name: 'Fog of Love', price: 49.99, img: fogOfLove },
-      { name: 'Wingspan', price: 39.99, img: wingspan },
-      { name: 'Dominion', price: 42.99, img: dominion },
-      { name: 'Fluxx', price: 18.99, img: fluxx },
-      { name: 'Between Two Cities', price: 30.99, img: betweenTwoCities },
-    ].map((item) => ({ id: uniqid(), ...item }))
-  );
+  const items = useRef(appItems.map((item) => ({ id: uniqid(), ...item })));
 
   function addToCart(itemId, quantity) {
     setCart((cart) => {

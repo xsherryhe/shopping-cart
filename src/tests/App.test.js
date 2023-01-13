@@ -24,6 +24,3 @@ describe('App', () => {
     });
   });
 });
-
-// TO DO: Cart in header updates when adding to cart, deleting from cart, or editing cart
-// Wrap App around BrowserRouter as needed

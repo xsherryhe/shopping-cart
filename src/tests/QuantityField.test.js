@@ -44,6 +44,22 @@ describe('QuantityField', () => {
       expect(data.quantity).toBe(2);
     });
 
+    it('calls the changeQuantity callback with a minimum value of 1 when the decrement button is clicked', () => {
+      const data = { quantity: 1 };
+      const changeQuantity = changeQuantityFn(data);
+      render(
+        <QuantityField
+          quantity={data.quantity}
+          changeQuantity={changeQuantity}
+        />
+      );
+      const button = screen.getByRole('button', { name: '-' });
+      userEvent.click(button);
+
+      expect(changeQuantity).toHaveBeenCalled();
+      expect(data.quantity).toBe(1);
+    });
+
     it('calls the changeQuantity callback to add 1 when the increment button is clicked', () => {
       const data = { quantity: 5 };
       const changeQuantity = changeQuantityFn(data);
