@@ -3,7 +3,11 @@ import { totalPrice } from '../helpers/totals';
 
 import CartItem from './CartItem';
 
-export default function Cart({ cart, changeCartQuantity, deleteFromCart }) {
+export default function Cart({
+  cart = [],
+  changeCartQuantity,
+  deleteFromCart,
+}) {
   return (
     <div>
       <h1>My Cart</h1>
@@ -20,6 +24,7 @@ export default function Cart({ cart, changeCartQuantity, deleteFromCart }) {
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((item) => (
               <CartItem
+                key={item.id}
                 item={item}
                 onChangeQuantity={changeCartQuantity}
                 onDelete={deleteFromCart}
