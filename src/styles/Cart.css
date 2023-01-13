@@ -1,3 +1,48 @@
-table.cart {
+.cart {
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.cart .container {
+  min-height: 70vh;
+  width: max-content;
   margin: auto;
+  padding: 1rem;
+  border: 3px solid var(--background-color);
+  border-radius: 0.2rem;
+  box-shadow: 0 0 5px var(--secondary-color);
+  display: grid;
+  grid-template-rows: max-content max-content 1fr max-content;
+  justify-items: center;
+}
+
+.cart h1 {
+  margin: 0 0 1rem;
+}
+
+.cart-display {
+  margin: 1rem auto;
+  border-spacing: 1rem 0;
+}
+
+.cart img {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.2rem;
+  margin: 0 -0.5rem;
+}
+
+.cart .quantity.field button {
+  width: 1rem;
+  height: 1rem;
+}
+
+.cart .quantity.field svg {
+  font-size: 0.5rem;
+}
+
+.cart .check-out {
+  grid-row: 4;
 }

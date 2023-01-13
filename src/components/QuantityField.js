@@ -1,4 +1,6 @@
 import '../styles/QuantityField.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 export default function QuantityField({ quantity, changeQuantity, input }) {
   function increment(e) {
@@ -35,11 +37,11 @@ export default function QuantityField({ quantity, changeQuantity, input }) {
     <div className="field quantity">
       {quantityDisplay}
       <div className="change-buttons">
-        <button className="icon" onClick={decrement}>
-          -
+        <button className="icon" aria-label="subtract" onClick={decrement}>
+          <FontAwesomeIcon icon={faMinus} alt="subtract" />
         </button>
-        <button className="icon" onClick={increment}>
-          +
+        <button className="icon" aria-label="add" onClick={increment}>
+          <FontAwesomeIcon icon={faPlus} alt="add" />
         </button>
       </div>
     </div>

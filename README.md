@@ -42,3 +42,6 @@ https://www.flickr.com/photos/carbonnyc/528632388
 
 12) Balázs Utasi on Pexels  
 https://www.pexels.com/photo/five-dice-on-sand-998679/
+
+13) nikolabelopitov on Pixabay  
+https://pixabay.com/photos/sand-pattern-waves-dunes-2005066/

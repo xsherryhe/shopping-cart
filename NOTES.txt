@@ -23,4 +23,4 @@ App
     Total
     checkout button
 
-TO DO: Styling
+TO DO: Styling -- move some cart styling to cart items, add left side image on cart page, remove icon button, special text for empty cart + test, cart icon in header

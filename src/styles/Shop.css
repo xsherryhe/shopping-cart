@@ -1,6 +1,6 @@
 .shop h1 {
   background-color: var(--secondary-color);
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.5rem;
   width: max-content;
   color: white;
   padding: 1rem;
@@ -13,11 +13,12 @@
 
 .shop .items {
   background-color: white;
-  padding: 1.5rem;
+  padding: 2rem 3rem;
   box-shadow: 0 0 5px var(--secondary-color);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2.5rem;
+  column-gap: 2rem;
 }
 
 .shop .items > * {

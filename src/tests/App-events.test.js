@@ -16,7 +16,7 @@ function addToCart() {
 function changeCartQuantity() {
   const cartLink = screen.getByRole('link', { name: /Cart/ });
   userEvent.click(cartLink);
-  const incrementButton = screen.getAllByRole('button', { name: '+' })[0];
+  const incrementButton = screen.getAllByRole('button', { name: 'add' })[0];
   userEvent.click(incrementButton);
 }
 

@@ -12,3 +12,7 @@
 .shop .item .info {
   padding: 0.75rem 0;
 }
+
+.shop .item h2 {
+  margin: 0;
+}

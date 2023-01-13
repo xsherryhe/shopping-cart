@@ -7,7 +7,7 @@ export default function ShopItem({ item: { name, price, img } }) {
         <img src={img} alt="" />
       </div>
       <div className="info">
-        <div className="name">{name}</div>
+        <h2 className="name">{name}</h2>
         <div className="price">${price.toFixed(2)}</div>
       </div>
     </div>

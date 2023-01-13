@@ -37,7 +37,7 @@ describe('QuantityField', () => {
           changeQuantity={changeQuantity}
         />
       );
-      const button = screen.getByRole('button', { name: '-' });
+      const button = screen.getByRole('button', { name: 'subtract' });
       userEvent.click(button);
 
       expect(changeQuantity).toHaveBeenCalled();
@@ -53,7 +53,7 @@ describe('QuantityField', () => {
           changeQuantity={changeQuantity}
         />
       );
-      const button = screen.getByRole('button', { name: '-' });
+      const button = screen.getByRole('button', { name: 'subtract' });
       userEvent.click(button);
 
       expect(changeQuantity).toHaveBeenCalled();
@@ -69,7 +69,7 @@ describe('QuantityField', () => {
           changeQuantity={changeQuantity}
         />
       );
-      const button = screen.getByRole('button', { name: '+' });
+      const button = screen.getByRole('button', { name: 'add' });
       userEvent.click(button);
 
       expect(changeQuantity).toHaveBeenCalled();

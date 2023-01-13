@@ -2,7 +2,7 @@ import { itemTotalPrice } from '../helpers/totals';
 import QuantityField from './QuantityField';
 
 export default function CartItem({
-  item: { id, name, quantity, price },
+  item: { id, name, quantity, price, img },
   onChangeQuantity,
   onDelete,
 }) {
@@ -19,6 +19,9 @@ export default function CartItem({
 
   return (
     <tr>
+      <td className="image">
+        <img src={img} alt="" />
+      </td>
       <td className="name">{name}</td>
       <td className="quantity">
         <QuantityField

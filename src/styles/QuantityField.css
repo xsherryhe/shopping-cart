@@ -1,6 +1,8 @@
 .quantity.field {
   display: flex;
   gap: 0.25rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .quantity.field .change-buttons {
@@ -12,9 +14,16 @@
   width: 2.5rem;
 }
 
-.quantity.field div.quantity,
 .quantity.field .change-buttons button {
   width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity.field .change-buttons svg {
+  font-size: 0.75rem;
 }
 
 .quantity.field input[type="number"]::-webkit-outer-spin-button,
