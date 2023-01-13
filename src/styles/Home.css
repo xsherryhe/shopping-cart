@@ -1,5 +1,14 @@
 .home {
-  padding: 4rem 0;
+  padding: 10vh 0;
+  display: flex;
+  justify-content: center;
+}
+
+.home .container {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  box-shadow: 0 0 10px var(--secondary-color);
 }
 
 .home h1 {
@@ -15,6 +24,13 @@
   justify-content: center;
   gap: 3rem;
   padding: 2rem 0;
+}
+
+.home .info > * {
+  border: 3px solid var(--background-color);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem 1rem;
+  box-shadow: 0 0 5px var(--secondary-color);
 }
 
 .home .info h3 {

@@ -1,8 +1,18 @@
 .quantity.field {
   display: flex;
+  gap: 0.25rem;
 }
 
-.quantity.field .quantity,
+.quantity.field .change-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.quantity.field input.quantity {
+  width: 2.5rem;
+}
+
+.quantity.field div.quantity,
 .quantity.field .change-buttons button {
   width: 1.5rem;
 }

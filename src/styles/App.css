@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  background-color: var(--background-color);
 }
 
 .App.homepage {
@@ -10,4 +11,6 @@
 
 .App:not(.homepage) header {
   background-color: var(--secondary-color);
+  border-bottom: 3px solid white;
+  box-shadow: 0 0 5px var(--secondary-color);
 }

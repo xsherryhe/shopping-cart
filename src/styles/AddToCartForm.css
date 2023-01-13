@@ -2,6 +2,7 @@ form.add-to-cart {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
 }
 
 form.add-to-cart .message {

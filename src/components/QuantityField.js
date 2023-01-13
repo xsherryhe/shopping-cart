@@ -35,8 +35,12 @@ export default function QuantityField({ quantity, changeQuantity, input }) {
     <div className="field quantity">
       {quantityDisplay}
       <div className="change-buttons">
-        <button onClick={decrement}>-</button>
-        <button onClick={increment}>+</button>
+        <button className="icon" onClick={decrement}>
+          -
+        </button>
+        <button className="icon" onClick={increment}>
+          +
+        </button>
       </div>
     </div>
   );
