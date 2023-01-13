@@ -23,4 +23,4 @@ App
     Total
     checkout button
 
-TO DO: Testing, styling
+TO DO: Testing -- QuantityField, Cart, CartItem, App events; styling

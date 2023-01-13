@@ -30,6 +30,15 @@ describe('AddToCartForm', () => {
   });
 
   describe('events', () => {
+    describe('when the input is changed', () => {
+      it('changes the input value on the child component', () => {
+        render(<AddToCartForm />);
+        const input = screen.getByRole('spinbutton');
+        userEvent.type(input, '8');
+        expect(input).toHaveValue(18);
+      });
+    });
+
     describe('when the form is submitted', () => {
       describe('when the input is invalid', () => {
         it('displays an error message', () => {
