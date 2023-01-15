@@ -2,8 +2,6 @@ This project is a mock front-end interface for a shopping app with the ability t
 
 The project primarily demonstrates use of React client-side routing and basic testing of UI elements with Testing Library packages.
 
-This project is currently in progress.
-
 Image credits:
 1) lucharanger2018 on Pixabay  
 https://pixabay.com/photos/monopoly-game-board-piece-fun-3427599/
