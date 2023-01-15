@@ -47,9 +47,10 @@ header .cart-icon {
 
 @media (max-width: 650px) {
   header {
+    position: relative;
     display: grid;
     grid-template: repeat(2, max-content) / repeat(3, max-content);
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 0.5rem;
     column-gap: 0.5rem;
   }
