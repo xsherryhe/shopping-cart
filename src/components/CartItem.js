@@ -1,4 +1,8 @@
+import '../styles/CartItem.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { itemTotalPrice } from '../helpers/totals';
+
 import QuantityField from './QuantityField';
 
 export default function CartItem({
@@ -18,7 +22,7 @@ export default function CartItem({
   }
 
   return (
-    <tr>
+    <tr className="item">
       <td className="image">
         <img src={img} alt="" />
       </td>
@@ -32,7 +36,13 @@ export default function CartItem({
       </td>
       <td className="price">${itemTotalPrice({ quantity, price })}</td>
       <td>
-        <button onClick={handleDelete}>Remove</button>
+        <button
+          className="delete icon"
+          aria-label="remove"
+          onClick={handleDelete}
+        >
+          <FontAwesomeIcon icon={faTrashCan} alt="remove" />
+        </button>
       </td>
     </tr>
   );

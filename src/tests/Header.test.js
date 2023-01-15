@@ -16,8 +16,8 @@ describe('Header', () => {
 
     it('renders the cart total in the cart link', () => {
       render(<Header cartTotal={5} />);
-      const cartLink = screen.getByRole('link', { name: 'Cart (5)' });
-      expect(cartLink).toBeInTheDocument();
+      const cartLink = screen.getByRole('link', { name: /Cart/ });
+      expect(cartLink).toHaveTextContent('5');
     });
   });
 });

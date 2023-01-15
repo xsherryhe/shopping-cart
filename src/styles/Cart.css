@@ -1,15 +1,24 @@
 .cart {
   background-color: white;
-  padding: 2rem;
   margin: 2rem auto;
   box-shadow: 0 0 10px var(--secondary-color);
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.cart > img {
+  height: 100%;
+  min-height: 80vh;
+  max-width: 55vw;
+  object-fit: cover;
 }
 
 .cart .container {
   min-height: 70vh;
-  width: max-content;
+  width: 40vw;
   margin: auto;
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   border: 3px solid var(--background-color);
   border-radius: 0.2rem;
   box-shadow: 0 0 5px var(--secondary-color);
@@ -19,28 +28,28 @@
 }
 
 .cart h1 {
-  margin: 0 0 1rem;
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-.cart-display {
-  margin: 1rem auto;
-  border-spacing: 1rem 0;
+.cart .empty {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--dark-background-color);
+  height: 50vh;
+  display: flex;
+  align-items: center;
 }
 
-.cart img {
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 0.2rem;
-  margin: 0 -0.5rem;
+.cart table {
+  margin: 0 auto;
+  border-spacing: 1rem;
 }
 
-.cart .quantity.field button {
-  width: 1rem;
-  height: 1rem;
-}
-
-.cart .quantity.field svg {
-  font-size: 0.5rem;
+.cart tfoot {
+  height: 2rem;
 }
 
 .cart .check-out {

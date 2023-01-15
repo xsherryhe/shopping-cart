@@ -2,10 +2,12 @@
   text-align: center;
   min-height: 100vh;
   background-image: url(../images/sand.jpg);
+  background-size: 100vw;
 }
 
 .App.homepage {
   background-image: url(../images/boardwalk-dice.jpg);
+  background-size: auto;
   background-position: bottom;
 }
 

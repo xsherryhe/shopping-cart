@@ -23,7 +23,7 @@ function changeCartQuantity() {
 function deleteFromCart() {
   const cartLink = screen.getByRole('link', { name: /Cart/ });
   userEvent.click(cartLink);
-  const deleteButton = screen.getAllByRole('button', { name: 'Remove' })[0];
+  const deleteButton = screen.getAllByRole('button', { name: 'remove' })[0];
   userEvent.click(deleteButton);
 }
 

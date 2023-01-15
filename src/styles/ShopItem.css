@@ -1,5 +1,5 @@
 .shop .item .image {
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   padding: 0.5rem 0;
 }
 
