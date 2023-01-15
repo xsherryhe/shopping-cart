@@ -8,16 +8,16 @@
 }
 
 .cart > img {
-  height: 100%;
+  align-self: stretch;
   min-height: 80vh;
-  max-width: 55vw;
+  width: 55vw;
   object-fit: cover;
 }
 
 .cart .container {
   min-height: 70vh;
   width: 40vw;
-  margin: auto;
+  margin: 1.5rem auto;
   padding: 1rem 0.5rem;
   border: 3px solid var(--background-color);
   border-radius: 0.2rem;
@@ -32,6 +32,7 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  font-weight: 600;
 }
 
 .cart .empty {

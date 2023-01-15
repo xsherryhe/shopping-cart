@@ -10,7 +10,7 @@ export default function Shop({ items, addToCart }) {
     <div className="shop">
       <h1>
         <FontAwesomeIcon icon={faStore} />
-        The BoardWalk Online Shop
+        The BoardWalk Shop
         <FontAwesomeIcon icon={faStore} />
       </h1>
       <div className="items">

@@ -5,6 +5,10 @@
   --light-secondary-color: #005aaa;
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
