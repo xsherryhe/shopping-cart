@@ -33,3 +33,12 @@
 .cart .item button.delete svg {
   font-size: 0.8rem;
 }
+
+@media (max-width: 420px) {
+  .cart .item img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+}

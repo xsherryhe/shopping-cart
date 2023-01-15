@@ -1,6 +1,6 @@
 .cart {
   background-color: white;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
   box-shadow: 0 0 10px var(--secondary-color);
   display: flex;
   align-items: center;
@@ -55,4 +55,42 @@
 
 .cart .check-out {
   grid-row: 4;
+}
+
+@media (max-width: 1000px) {
+  .cart img {
+    width: 45vw;
+  }
+
+  .cart .container {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 825px) {
+  .cart {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .cart > img {
+    width: 100vw;
+    min-height: 0;
+    height: 35vh;
+  }
+
+  .cart .container {
+    width: 90vw;
+    min-height: 40vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .cart .container {
+    width: 95vw;
+  }
+
+  .cart table {
+    border-spacing: 0.3rem 0.6rem;
+  }
 }

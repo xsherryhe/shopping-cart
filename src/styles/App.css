@@ -11,6 +11,10 @@
   background-position: bottom;
 }
 
+.App:not(.homepage) {
+  padding-bottom: 2rem;
+}
+
 .App:not(.homepage) header {
   background-color: var(--secondary-color);
   border-bottom: 3px solid white;

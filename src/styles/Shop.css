@@ -23,7 +23,6 @@
 .shop .items {
   border-top: 3px solid var(--background-color);
   background-color: white;
-  border-radius: 0.2rem;
   box-shadow: 0 0 10px var(--secondary-color);
   padding: 2rem;
   display: grid;
@@ -72,7 +71,7 @@
   .shop .items {
     padding: 1rem;
   }
-  
+
   .shop h1 {
     font-size: 1.75rem;
   }
