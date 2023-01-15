@@ -7,7 +7,7 @@
 
 .App.homepage {
   background-image: url(../images/boardwalk-dice.jpg);
-  background-size: auto;
+  background-size: cover;
   background-position: bottom;
 }
 
@@ -15,4 +15,18 @@
   background-color: var(--secondary-color);
   border-bottom: 3px solid white;
   box-shadow: 0 0 5px var(--secondary-color);
+}
+
+@media (max-height: 650px) {
+  .App.homepage {
+    background-image: url(../images/sand.jpg);
+    background-size: 100vw;
+    background-position: top;
+  }
+
+  header {
+    background-color: var(--secondary-color);
+    border-bottom: 3px solid white;
+    box-shadow: 0 0 5px var(--secondary-color);
+  }
 }

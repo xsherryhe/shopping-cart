@@ -6,9 +6,9 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 export default function Header({ cartTotal = 0 }) {
   return (
     <header>
-      <h1>
-        <Link to="/">The BoardWalk</Link>
-      </h1>
+      <Link to="/">
+        <h1>The BoardWalk</h1>
+      </Link>
       <Link to="/">Home</Link>
       <Link to="shop">Shop</Link>
       <Link className="cart-link" to="cart">
