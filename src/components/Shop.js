@@ -11,7 +11,6 @@ export default function Shop({ items, addToCart }) {
       <h1>
         <FontAwesomeIcon icon={faStore} />
         The BoardWalk Shop
-        <FontAwesomeIcon icon={faStore} />
       </h1>
       <div className="items">
         {items.map((item) => (

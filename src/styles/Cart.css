@@ -1,20 +1,24 @@
 .cart {
+  background-color: var(--background-color);
+  padding: 2rem 0;
+}
+
+.cart .container {
   background-color: white;
-  margin: 2rem auto 0;
   box-shadow: 0 0 10px var(--secondary-color);
   display: flex;
   align-items: center;
   min-height: 80vh;
 }
 
-.cart > img {
+.cart .container > img {
   align-self: stretch;
   min-height: 80vh;
   width: 55vw;
   object-fit: cover;
 }
 
-.cart .container {
+.cart .content {
   min-height: 70vh;
   width: 40vw;
   margin: 1.5rem auto;
@@ -58,35 +62,38 @@
 }
 
 @media (max-width: 1000px) {
-  .cart img {
+  .cart .container > img {
     width: 45vw;
   }
 
-  .cart .container {
+  .cart .content {
     width: 50vw;
   }
 }
 
 @media (max-width: 825px) {
   .cart {
-    flex-direction: column;
-    margin-top: 1.5rem;
+    padding: 1.5rem 0;
   }
 
-  .cart > img {
+  .cart .container {
+    flex-direction: column;
+  }
+
+  .cart .container > img {
     width: 100vw;
     min-height: 0;
     height: 35vh;
   }
 
-  .cart .container {
+  .cart .content {
     width: 90vw;
     min-height: 40vh;
   }
 }
 
 @media (max-width: 420px) {
-  .cart .container {
+  .cart .content {
     width: 95vw;
   }
 

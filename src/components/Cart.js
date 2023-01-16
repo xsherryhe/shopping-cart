@@ -47,18 +47,20 @@ export default function Cart({
 
   return (
     <div className="cart">
-      <img src={gifts} alt="" />
       <div className="container">
-        <h1>
-          <FontAwesomeIcon icon={faCartShopping} />
-          My Cart
-        </h1>
-        {cart.length ? (
-          cartTable
-        ) : (
-          <div className="empty">Your cart is empty!</div>
-        )}
-        <button className="check-out">Check Out</button>
+        <img src={gifts} alt="" />
+        <div className="content">
+          <h1>
+            <FontAwesomeIcon icon={faCartShopping} />
+            My Cart
+          </h1>
+          {cart.length ? (
+            cartTable
+          ) : (
+            <div className="empty">Your cart is empty!</div>
+          )}
+          <button className="check-out">Check Out</button>
+        </div>
       </div>
     </div>
   );

@@ -1,18 +1,12 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-image: url(../images/sand.jpg);
-  background-size: 100vw;
 }
 
 .App.homepage {
   background-image: url(../images/boardwalk-dice.jpg);
   background-size: cover;
   background-position: bottom;
-}
-
-.App:not(.homepage) {
-  padding-bottom: 2rem;
 }
 
 .App:not(.homepage) header {
@@ -28,7 +22,7 @@
     background-position: top;
   }
 
-  header {
+  .App.homepage header {
     background-color: var(--secondary-color);
     border-bottom: 3px solid white;
     box-shadow: 0 0 5px var(--secondary-color);
