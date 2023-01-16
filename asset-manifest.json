@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.a725cf3b.css",
+    "main.js": "/shopping-cart/static/js/main.014c80d0.js",
+    "static/media/sand.jpg": "/shopping-cart/static/media/sand.45bd187f560847413810.jpg",
+    "static/media/between-two-cities.png": "/shopping-cart/static/media/between-two-cities.ca1ac14ce11ea436e080.png",
+    "static/media/gifts.jpg": "/shopping-cart/static/media/gifts.b746418ebf08f7c36e07.jpg",
+    "static/media/fog-of-love.png": "/shopping-cart/static/media/fog-of-love.58d6ca11627b86805654.png",
+    "static/media/boardwalk-dice.jpg": "/shopping-cart/static/media/boardwalk-dice.e172de5371ae6a6a7937.jpg",
+    "static/media/game-of-life.jpg": "/shopping-cart/static/media/game-of-life.4c24406de5e0c8e0dab0.jpg",
+    "static/media/clue.jpg": "/shopping-cart/static/media/clue.9e8958af6cd9e0c9bc29.jpg",
+    "static/media/pandemic.jpg": "/shopping-cart/static/media/pandemic.9a97bf02f7a0880eac80.jpg",
+    "static/media/wingspan.jpg": "/shopping-cart/static/media/wingspan.29f725102459bc91f232.jpg",
+    "static/media/the-crew.jpg": "/shopping-cart/static/media/the-crew.3fdb4dee7622171a2090.jpg",
+    "static/media/dominion.jpg": "/shopping-cart/static/media/dominion.c16bd7d6c00b92e83e33.jpg",
+    "static/media/apples-to-apples.jpg": "/shopping-cart/static/media/apples-to-apples.79e3a4a3ad336a18c8aa.jpg",
+    "static/media/fluxx.jpg": "/shopping-cart/static/media/fluxx.9bbf688198b8cca27e0e.jpg",
+    "static/media/scrabble.jpg": "/shopping-cart/static/media/scrabble.5646dfca9624a1d16304.jpg",
+    "static/media/monopoly.jpg": "/shopping-cart/static/media/monopoly.54ea1f6e4efe52a61c56.jpg",
+    "static/media/settlers-of-catan.jpg": "/shopping-cart/static/media/settlers-of-catan.ae287dc75d5e05b629fa.jpg",
+    "static/media/ticket-to-ride.jpg": "/shopping-cart/static/media/ticket-to-ride.dbca7d3d790b57f3660d.jpg",
+    "static/media/playing-cards.jpg": "/shopping-cart/static/media/playing-cards.1109a40753382116de0f.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.a725cf3b.css.map": "/shopping-cart/static/css/main.a725cf3b.css.map",
+    "main.014c80d0.js.map": "/shopping-cart/static/js/main.014c80d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a725cf3b.css",
+    "static/js/main.014c80d0.js"
+  ]
+}
