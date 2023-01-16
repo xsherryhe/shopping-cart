@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.a725cf3b.css",
+    "main.css": "/shopping-cart/static/css/main.f4c3a4ae.css",
     "main.js": "/shopping-cart/static/js/main.73774a4a.js",
     "static/media/sand.jpg": "/shopping-cart/static/media/sand.45bd187f560847413810.jpg",
     "static/media/between-two-cities.png": "/shopping-cart/static/media/between-two-cities.ca1ac14ce11ea436e080.png",
@@ -21,11 +21,11 @@
     "static/media/ticket-to-ride.jpg": "/shopping-cart/static/media/ticket-to-ride.dbca7d3d790b57f3660d.jpg",
     "static/media/playing-cards.jpg": "/shopping-cart/static/media/playing-cards.1109a40753382116de0f.jpg",
     "index.html": "/shopping-cart/index.html",
-    "main.a725cf3b.css.map": "/shopping-cart/static/css/main.a725cf3b.css.map",
+    "main.f4c3a4ae.css.map": "/shopping-cart/static/css/main.f4c3a4ae.css.map",
     "main.73774a4a.js.map": "/shopping-cart/static/js/main.73774a4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.a725cf3b.css",
+    "static/css/main.f4c3a4ae.css",
     "static/js/main.73774a4a.js"
   ]
 }
