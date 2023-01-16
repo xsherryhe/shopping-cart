@@ -1,5 +1,4 @@
 .cart {
-  background-color: var(--background-color);
   padding: 2rem 0;
 }
 
@@ -8,12 +7,12 @@
   box-shadow: 0 0 10px var(--secondary-color);
   display: flex;
   align-items: center;
-  min-height: 80vh;
+  min-height: 75vh;
 }
 
 .cart .container > img {
   align-self: stretch;
-  min-height: 80vh;
+  min-height: 75vh;
   width: 55vw;
   object-fit: cover;
 }
